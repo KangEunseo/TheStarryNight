@@ -4,7 +4,7 @@ function shareKakaotalk() {
           objectType:"feed"
         , content : {
               title:"별이 빛나는 밤"   // 콘텐츠의 타이틀
-            , description:"The Starry Night⭐ 당신의 화가를 찾아보세요."   // 콘텐츠 상세설명
+            , description:"The Starry Night ⭐ 당신의 화가를 찾아 보세요."   // 콘텐츠 상세 설명
             , imageUrl:'https://kangeunseo.github.io/TheStarryNight/images/thumbnail.jpg'   // 썸네일 이미지
             , link : {
                   mobileWebUrl:"https://kangeunseo.github.io/TheStarryNight/index_m.html"   // 모바일 카카오톡에서 사용하는 웹 링크 URL
@@ -13,7 +13,7 @@ function shareKakaotalk() {
         }
         , buttons : [
             {
-                  title:"게시글 확인"    // 버튼 제목
+                  title:"테스트 하러 가기"    // 버튼 제목
                 , link : {
                     mobileWebUrl:"https://kangeunseo.github.io/TheStarryNight/index_m.html"   // 모바일 카카오톡에서 사용하는 웹 링크 URL
                   , webUrl:"https://kangeunseo.github.io/TheStarryNight/index.html" // PC버전 카카오톡에서 사용하는 웹 링크 URL
