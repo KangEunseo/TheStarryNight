@@ -128,3 +128,42 @@ div {
         animation: rotate_clothes1 6s ease-in-out infinite;
     }
 }
+
+.change {
+    display: none;
+}
+
+@media (orientation:landscape){
+    body {
+        background-color: #54626B;
+    }
+
+    .box {
+        display: none;
+    }
+
+    .change {
+        display: block;
+        visibility: visible;
+        width: 100%;
+        text-align: center;
+        margin-top: 25vh;
+    }
+
+    .change .change-ment {
+        width: 60vw;
+        height: auto;
+        margin-bottom: 10vh;
+    }
+
+    .change .change-phone {
+        width: 30vw;
+        height: auto;
+        animation: phone 0.5s infinite alternate;  
+    }
+
+    @keyframes phone {
+        0%{transform:translate(0,0);}
+        100%{transform:translate(0,5px);}
+     }  
+}
