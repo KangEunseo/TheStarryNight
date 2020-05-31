@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+body {
+    background-color: #54626B;
+    overflow: hidden;
+}
+
+div {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        text-align: center;
+        background: url('../images/bath/bg.png') no-repeat center center fixed;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    div {
+        visibility: visible;
+    }
+
+    #bg {
+        background: url('../images/clothes/bg_white.png') no-repeat center center fixed;
+        background-size: cover;
+        position: absolute;
+        visibility: hidden;
+        height: 110%;
+        z-index: 10;
+    }
+
+    #ask {
+        background-color: #ffffff;
+        border-radius: 1vw;
+        padding: 1vw;
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15vh;
+    }
+
+    #ask img {
+        width: 65vw;
+    }
+
+    .foo {
+        margin-top: 8vh;
+    }
+
+    .fooDiv {
+        display: inline-block;
+        background-color: #ffffff;
+        width: 36vw;
+        margin: 1vw;
+        border-radius: 1.5vw;
+    }
+
+    .fooDiv:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .foo img {
+        padding: 2vw;
+        height: 8vh;
+        max-width: 30vw;
+    }
+
+    #answer-img1, #answer-img2, #answer-img3, #answer-img4 {
+        height: 13vh;
+        max-width: 34vw;
+        animation: scaleBounce .5s alternate infinite;
+    }
+
+    #answer-img1:hover, #answer-img2:hover, #answer-img3:hover, #answer-img4:hover {
+        animation-play-state: paused;
+    }
+
+    @keyframes scaleBounce {
+        from {transform:scale(.7)}
+        to {transform:scale(.9)}
+    }
+
+    .bubble {
+        position:absolute;
+        width:10em;
+        height:10em;
+        border:1px solid rgba(255,255,255,0.1);
+        border-radius:50%;
+        background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%);
+        box-shadow: inset 0 20px 30px #F9F9F9, inset 1em 1em 1em #EAEAEA;
+        z-index: -100;
+      }
+
+    .bubble:hover{
+        display:none;
+    }
+    
+    .b1 {
+        animation: floatup 10s linear infinite, sideways 5s ease-in-out infinite alternate;
+        left: 10%;
+        top: 100%; 
+    }
+
+    .b2 {
+        animation: floatup 5s linear infinite, sideways 4s ease-in-out 1s infinite alternate;
+        left: 15%;
+        top: 30%;
+        transform: scale(.3);
+    }
+
+    .b3 {
+        animation: floatup 4s linear infinite, sideways 6s ease-in-out 6s infinite alternate;
+        left: 20%;
+        transform: scale(.7);
+    }
+
+    .b4 {
+        animation: floatup 6s linear infinite, sideways 5s ease-in-out 3s infinite alternate;
+        left: 25%;
+        top:90%;
+        transform: scale(.5);
+    }
+
+    .b5 {
+        animation: floatup 8s linear infinite, sideways 6s ease-in-out 3s infinite alternate;
+        left: 30%;
+        top:30%;
+        transform: scale(.2);
+    }
+    
+    .b6 {
+        animation: floatup 7s linear infinite, sideways 4s ease-in-out 3.5s infinite alternate;
+        left:40%;
+        top:50%;
+        transform: scale(.6);
+    }
+
+    .b7 {
+        animation: floatup 6s linear infinite, sideways 5s ease-in-out 4s infinite alternate;
+        left: 90%;
+        top:90%;
+        transform: scale(1.0);
+    }
+
+    @keyframes floatup{
+    0% {margin-top: 50%;}
+    100% {margin-top: -50%;}
+    }
+
+    @keyframes sideways{
+    0% {margin-left: 0em;}
+    100%{margin-left: 20em;}
+    }
+}

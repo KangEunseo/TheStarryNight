@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+@keyframes rotate_clothes1 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(359deg); }
+}
+
+@keyframes rotate_clothes2 {
+    0% { transform: rotate(359deg); }
+    100% { transform: rotate(0deg); }
+}
+
+body {
+    background-color: #54626B;
+    overflow: hidden;
+}
+
+div {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        text-align: center;
+        background: url('../images/clothes/bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    div {
+        visibility: visible;
+    }
+
+    #bg {
+        background: url('../images/clothes/bg_white.png') no-repeat center center fixed;
+        background-size: cover;
+        position: absolute;
+        visibility: hidden;
+        height: 110%;
+    }
+
+    #ask {
+        background-color: rgba(125, 139, 148, 0.8);
+        border-radius: 1vw;
+        padding: 1vw;
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15vh;
+    }
+
+    #ask img {
+        width: 70vw;
+    }
+
+    .foo {
+        margin-top: 8vh;
+    }
+
+    .fooDiv {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 36vw;
+        margin: 1vw;
+        height: 10vh;
+        border-radius: 1.5vw;
+        line-height: 9vh;
+    }
+
+    .fooDiv:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .foo img {
+        padding: 2vw;
+        max-height: 9vh;
+        max-width: 34vw;
+    }
+
+    .box {
+        margin-top: -15vh;
+        width: 100%;
+        position: fixed;
+        z-index: -30;
+    }
+    
+    .box img {
+        width: 40vw;
+    }
+
+    .box img:not(:first-child) {
+        margin-left: -22vw;
+    }
+
+    .box img:hover {
+        filter: contrast(120%) drop-shadow(0 0 20px rgba(255, 255, 255, 0.7));
+    }
+
+    .footer > img {
+        width: 32vw;
+        position: relative;
+        z-index: -40;
+    }
+
+    .footer #bg1 {
+        left: -12vw;
+        top: 20vh;
+        animation: rotate_clothes1 5s ease-in-out infinite;
+    }
+    .footer #bg2 {
+        left: -18vw;
+        top: 38vh;
+        animation: rotate_clothes2 10s ease-in-out infinite;
+    }
+    .footer #bg3 {
+        left: -30vw;
+        top: 16vh;
+        animation: rotate_clothes1 9s ease-in-out infinite;
+    }
+    .footer #bg4 {
+        width: 28vw;
+        left: 65vw;
+        top: 4vh;
+        animation: rotate_clothes2 7s ease-in-out infinite;
+    }
+    .footer #bg5 {
+        left: 40vw;
+        top: -20vh;
+        animation: rotate_clothes1 6s ease-in-out infinite;
+    }
+}

@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+body {
+    background-color: #54626B;
+    overflow: hidden;
+}
+
+div {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        background: url('../images/letter/desk.png') no-repeat center center fixed;
+        background-size: cover;
+        text-align: center;
+    }
+
+    div {
+        visibility: visible;
+    }
+
+    .footer > img {
+        width: 32vw;
+        position: relative;
+        z-index: -40;
+    }
+
+    .footer #letter {
+        width: 130vw;
+        left: -40vw;
+        top: 30vh;
+        position: absolute;
+        z-index: 10;
+    }
+
+    .footer #flower {
+        width: 70vw;
+        left: -20vw;
+        top: 65vh;
+        position: absolute;
+        z-index: 30;
+    }
+
+    .footer #brush {
+        width: 44vw;
+        left: 55vw;
+        top: 5vh;
+        position: absolute;
+        z-index: 30;
+        animation: swing ease-in-out 1s infinite alternate;
+    }
+
+    .footer #ink {
+        width: 28vw;
+        left: -13vw;
+        top: 30vh;
+        position: absolute;
+        z-index: 30;
+    }
+
+    .footer #case {
+        width: 24vw;
+        left: 85vw;
+        top: 14vh;
+        position: absolute;
+        z-index: 20;
+    }
+
+    .footer #candle {
+        width: 48vw;
+        left: -27vw;
+        top: -5vh;
+        position: absolute;
+        z-index: 30;
+    }
+
+    @keyframes swing {
+        0% { transform: rotate(5deg); }
+        100% { transform: rotate(-5deg); }
+    }
+}

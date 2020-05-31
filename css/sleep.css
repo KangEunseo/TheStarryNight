@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+body {
+    background-color: #54626B;
+    overflow: hidden;
+}
+
+div {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        background: url('../images/sleep/bg.png') no-repeat center center fixed;
+        background-size: cover;
+        text-align: center;
+    }
+
+    div {
+        visibility: visible;
+    }
+
+    .footer #pillow {
+        width: 70vw;
+        left: -15vw;
+        top: 50vh;
+        position: absolute;
+        z-index: 1;
+        transform: rotate(-5deg);
+    }
+
+    .footer #bear {
+        width: 80vw;
+        left: -20vw;
+        top: 55vh;
+        position: absolute;
+        z-index: 3;
+        animation: swing ease-in-out 1s infinite alternate;
+    }
+
+    .footer #blanket {
+        width: 100vw;
+        left: -15vw;
+        bottom: -20vh;
+        position: absolute;
+        z-index: 5;
+    }
+
+    .footer #ment {
+        width: 80vw;
+        display: block;
+        margin: 30vh auto;
+        z-index: 7;
+        animation-name: tutsFade;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+    }
+
+    @keyframes swing {
+        0% { transform: rotate(5deg); }
+        100% { transform: rotate(-5deg); }
+    }
+
+    @keyframes tutsFade {
+        to { opacity: 0; }
+      }
+}

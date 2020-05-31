@@ -1,0 +1,109 @@
+@media only screen and (max-width: 640px) {
+    body {
+        background: url('../images/goArt/bg.png') no-repeat center center fixed;
+        background-size: cover;
+        text-align: center;
+    }
+
+    div {
+        visibility: visible;
+    }
+
+    #bg {
+        background-color:#54626B;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        position: absolute;
+        visibility: hidden;
+    }
+    #ask {
+        position: relative;
+        background-color: #181a33b2;
+        border-radius: 1vw;
+        padding: 1vw;
+        width: 85vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 23vh;
+        display: block;
+       
+    }
+  
+
+    #ask img {
+        width: 70vw;
+    }
+
+.light1 {
+    position: relative;
+    
+  }
+  
+  .light1 img {
+    position: absolute;
+    left: 325.5px;
+    top: 236.5px;
+    width: 6px;
+    height: 14px;
+  }
+  .light2 {
+    position: relative;
+    
+  }
+  
+  .light2 img {
+    position: absolute;
+    left: 325px;
+    top: 279px;
+    width: 5px;
+    height: 14px;
+  }
+  .light3 {
+    position: relative;
+    
+  }
+  
+  .light3 img {
+    position: absolute;
+    left: 306px;
+    top: 259px;
+    width: 5px;
+    height: 14px;
+  }
+  .light4 {
+    position: relative;
+    
+  }
+  
+  .light4 img {
+    position: absolute;
+    left: 207.5px;
+    top: 275.5px;
+    width: 6px;
+    height: 12px;
+  }
+  .top {
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}

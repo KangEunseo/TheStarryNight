@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_m.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <script type="text/javascript" src="js/index_m.js"></script>
+    <title> The Starry Night </title>
+</head>
+<body>
+    <audio id="playAudio" src="audio/walk.mp3" loop></audio>
+
+    <div class="box">
+        <img src="images/index_m/title.png" id="title" alt="title"
+          onmouseover="inTitle()" onmouseout="outTitle()" onclick="playAudio()" style="cursor: pointer;"><br>          
+        <img src="images/index_m/subtitle.png" alt="subtitle"><br>
+        <a href="letter.html">
+            <img src="images/index_m/arrow.png" alt="startBtn" id="startBtn">
+        </a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!-- 수정사항 -->
+<!-- 모바일에서 봐야 되니까 onmouseover, onmouseout 이벤트를 touch로 바꿔야 함 -->
+<!-- 모바일에서 봤을 때 선택지 옷 너무 작게 보임, 글씨도 가로로 좁음, 흰색 배경이 다 안채워짐 css 수정필요 -->

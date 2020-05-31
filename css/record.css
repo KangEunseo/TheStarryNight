@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+body {
+    background-color: #54626B;
+    overflow: hidden;
+}
+
+div {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        background: url('../images/record/bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+        text-align: center;
+    }
+
+    div {
+        visibility: visible;
+    }
+
+    #bg {
+        background: url('../images/clothes/bg_white.png') no-repeat center center fixed;
+        background-size: cover;
+        position: absolute;
+        visibility: hidden;
+        height: 110%;
+        z-index: -10;
+    }
+
+    #ask {
+        background-color: rgba(125, 139, 148, 0.8);
+        border-radius: 1vw;
+        padding: 1vw;
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15vh;
+    }
+
+    #ask img {
+        width: 70vw;
+    }
+
+    .foo {
+        margin-top: 8vh;
+    }
+
+    .fooDiv {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 36vw;
+        margin: 1vw;
+        border-radius: 1.5vw;
+    }
+
+    .fooDiv:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .foo img {
+        padding: 2vw;
+        height: 8vh;
+        max-width: 30vw;
+    }
+
+    #answer-img1, #answer-img2, #answer-img3, #answer-img4 {
+        height: 10vh;
+        max-width: 34vw;
+        animation: scaleBounce .3s alternate infinite;
+    }
+
+    #answer-img1:hover, #answer-img2:hover, #answer-img3:hover, #answer-img4:hover {
+        animation-play-state: paused;
+    }
+
+    @keyframes scaleBounce{
+        from {transform:scale(.7)}
+        to {transform:scale(1.0)}
+    }
+
+    .box {
+        margin-top: -15vh;
+        margin-left: 30vw;
+        width: 100%;
+        position: fixed;
+        z-index: -30;
+        animation: swing ease-in-out 1s infinite alternate;
+    }
+    
+    .box img {
+        width: 40vw;
+    }
+
+    @keyframes swing {
+        0% { transform: rotate(5deg); }
+        100% { transform: rotate(-5deg); }
+    }
+}

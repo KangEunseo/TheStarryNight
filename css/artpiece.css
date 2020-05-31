@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+body {
+    background-color: #54626B;
+    overflow: hidden;
+}
+
+div {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        background: url('../images/ap/bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+        text-align: center;
+    }
+
+    div {
+        visibility: visible;
+    }
+
+    #bg {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        position: absolute;
+        visibility: hidden;
+    }
+
+    #ask {
+        background-color: rgba(125, 139, 148, 0.8);
+        border-radius: 1vw;
+        padding: 1vw;
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15vh;
+        z-index: -20;
+    }
+
+    #ask img {
+        width: 70vw;
+    }
+
+    .foo{
+        margin-top: 8vh;
+        z-index: -30;
+    }
+
+    .foo img {
+        padding: 2vw;
+        max-height: 20vh;
+        max-width: 60vw;
+        border-radius: 10%;
+        z-index: -30;
+    }
+
+    .foo:hover {
+        filter: contrast(120%) drop-shadow(0 0 20px rgba(255, 255, 255, 0.7));
+    }
+
+    .foo #answer1 {
+        left: -20vw;
+        top: 13vh;
+        position: relative;
+    }
+
+    .foo #answer2 {
+        right: -20vw;
+        top: -7vh;
+        position: relative;
+    }
+
+    .foo #answer3 {
+        left: -20vw;
+        top: 0vh;
+        position: relative;
+    }
+
+    .foo #answer4 {
+        right: -20vw;
+        top: -20vh;
+        position: relative;
+    }
+
+    .box {
+        margin-top: -100vh;
+        width: 100%;
+        position: fixed;
+        z-index: -50;
+    }
+
+    .box #lamp_l {
+        float: left;
+        width: 20vw;
+        height: auto;
+    }
+
+    .box #lamp_r {
+        float: right;
+        width: 20vw;
+        height: auto;
+    }
+
+    .box #bg_1 {
+        width: 60vw;
+        height: auto;
+    }
+
+    .bag {
+        width: 50vw;
+        position: relative;
+        z-index: -50;
+    }
+
+    .bag #bg_2 {
+        left: -12vw;
+        top: 20vh;
+    }
+
+    .bag #bg_3 {
+        width: 28vw;
+        left: 65vw;
+        top: 4vh;
+    }
+}
