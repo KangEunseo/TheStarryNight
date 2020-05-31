@@ -80,3 +80,12 @@ div {
         100% { transform: rotate(-5deg); }
     }
 }
+
+/* @media only screen and (orientation: portrait) {
+    body { 
+        background-image: url(../images/change.jpg); 
+    }
+    .landscape_only  { 
+        display: none; 
+    }
+} */

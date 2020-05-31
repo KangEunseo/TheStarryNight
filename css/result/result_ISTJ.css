@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+@font-face { font-family: '국립박물관문화재단클래식L'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식L.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body {
+    background-color: #54626B;
+    overflow: hidden;
+    font-family: '국립박물관문화재단클래식L', Arial, Helvetica, sans-serif;
+}
+
+div, #kakao {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        padding-top: 40px;
+        text-align: center;
+        background: url('../../images/result/bg/ISTJ.png') no-repeat center center fixed;
+        background-size: cover;
+        overflow: auto;
+        color: #FFC885;
+    }
+
+    div {
+        visibility: visible;
+    }
+
+    #kakao {
+        visibility: visible;
+        width: 56px;
+        float: right;
+        margin-right: 20px;
+    }
+
+    .frame {
+        /* margin: auto; */
+        transform: translateX(40%);
+        width: 50vw;
+        height: auto;
+    }
+
+    .frame > img {
+        width: 60vw;
+        height: auto;
+    }
+
+    .frame > #artistPic {
+        position: absolute;
+        z-index: -1;
+        width: 45vw;
+        height: auto;
+        transform: translateX(-40%) translateY(-16%);
+        top: 126px;
+    }
+
+    .header {
+        width: 70vw;
+        margin: auto;
+        font-size: 18px;
+    }
+
+    .header > img {
+        max-width: 40vw;
+        margin-bottom: 4%;
+        margin-top: 2%;
+    }
+
+    #detail {
+        width: 90vw;
+        margin: 3vh auto 2vh auto;
+        font-size: 15px;
+        color: white;
+    }
+
+    .footer {
+        width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .inspiration {
+        float: left;
+        font-size: 18px;
+    }
+
+    #frname {
+        color: white;
+    }
+
+    .etc {
+        float: right;
+        margin-bottom: 5%;
+    }
+
+    #etc_comment {
+        float: left;
+        margin-right: 15px;
+        text-align: right;
+        color: #EDE8B9;
+        font-size: 15px;
+    }
+
+    #qrImg {
+        float: right;
+        width: 16vw;
+    }
+}
