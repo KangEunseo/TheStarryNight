@@ -52,7 +52,9 @@ div {
         background-color: rgba(255, 255, 255, 0.7);
         width: 36vw;
         margin: 1vw;
+        height: 10vh;
         border-radius: 1.5vw;
+        line-height: 9vh;
     }
 
     .fooDiv:hover {
@@ -61,7 +63,7 @@ div {
 
     .foo img {
         padding: 2vw;
-        height: 10vh;
+        max-height: 9vh;
         max-width: 34vw;
     }
 
