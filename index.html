@@ -1,19 +1,42 @@
-<html>
-    <head>
-        <title> The Starry Night </title> 
-        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-        <script type="text/javascript" src="index.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="left">
-                <div class="brush"><img id="rotating_brush" src="images/index/brush.png" width="100px" height="auto"></div>
-                <div class="yellow"><img id="rotating_yellow" src="images/index/yellow.png" width="80px" height="auto"></div>
-                <div class="phone"><img id="phoneImg" src="images/index/phone.png" width="454.184px" height="auto"></div>
-            </div>
+
+<!DOCTYPE html>
+<html lang='en' class=''>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="fullPage.js-2.9.7/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="fullPage.js-2.9.7/examples.css" />
+    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title> The Starry Night </title> 
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="fullPage.js-2.9.7/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['', 'rgb(84, 98, 107)'],
+                anchors: ['firstPage', 'secondPage']
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<div id="fullpage">
+    <div class="section intro"> 
+      <div class="container">
+        <div class="left">
+            <div class="brush"><img id="rotating_brush" src="images/index/brush.png" width="100px" height="auto"></div>
+            <div class="yellow"><img id="rotating_yellow" src="images/index/yellow.png" width="80px" height="auto"></div>
+            <div class="phone"><img id="phoneImg" src="images/index/phone.png" width="454.184px" height="auto"></div>
+        </div>
         </div>
         <div class="right">
             <img id="scale_brush" src="images/index/brush2.png" width="100px" height="auto">
@@ -30,6 +53,15 @@
             <img id="code" src="images/index/code.png" width="120px" height="auto">
             <img id="suggest" src="images/index/suggest.png" width="438px" height="auto">
         </div>
-        <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
-    </body>
+    </div>
+    <div class="section">
+        <div class="slide">
+          <video loop controls="false" style="height:80%;" data-autoplay>
+            <source src="video/TheStarryNight.mp4" type="video/mp4">
+          </video>
+        </div>
+    </div>
+</div>
+
+</body>
 </html>
