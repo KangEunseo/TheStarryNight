@@ -2,7 +2,7 @@ function setCookie(strName, strValue, iSecond=3000) {
     var strCookie = strName + "=" + encodeURIComponent(strValue);
     if( typeof iSecond === "number" )
     {
-        strCookie += "; max-age=" + iSecond + "; domain=pcnim02.github.io";
+        strCookie += "; max-age=" + iSecond + "; domain=kangeunseo.github.io";
     }
     document.cookie = strCookie;
 }
