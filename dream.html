@@ -1,30 +1,80 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/dream.css">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title> The Starry Night </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+    <link rel="stylesheet" href="css/dream.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
-<body>
-<div class="change">
-    <img class="change-ment" src="images/change_ment.png"><br>
-    <img class="change-phone" src="images/change_phone.png">
-</div>
-
-<div id="bg">
-    <div class="footer">
-        <img src="images/dream/pillow.png" alt="pillow" id="pillow">
-        <img src="images/dream/bear.png" alt="bear" id="bear">
-        <img src="images/dream/blanket.png" alt="blanket" id="blanket">
-        <img src="images/dream/ment2.png" alt="ment2" id="ment2">
+<body translate="no" style="overflow-y: hidden; overflow-x: hidden;">
+    <div class="change">
+        <img class="change-ment" src="images/change_ment.png"><br>
+        <img class="change-phone" src="images/change_phone.png">
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/dream.js"></script>
-</div>
+    <!-- Audio -->
+    <iframe src="audio/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+    <audio id="audio" autoplay>
+        <source src="audio/dream.mp3">
+    </audio>
+    <!-- <div class="container">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
+        <defs>
+            <path id="titlePath" fill="none" stroke="#FF0049" stroke-miterlimit="10" d="M284,346.5c-14.6,0-26.5-11.9-26.5-26.5
+                      c0-14.6,11.9-26.5,26.5-26.5s26.5,11.9,26.5,26.5C310.5,334.6,298.6,346.5,284,346.5z" />
+        </defs>
+        <g id="vinylGroup">
+            <circle id="vinylMain" fill="#2A2525" cx="284" cy="320" r="121"/>
+            <circle id="vinylStart" fill="#262121" cx="284" cy="320" r="117"/>
+            <circle id="vinylEnd" fill="#2A2525" cx="284" cy="320" r="50"/>
+            <circle id="vinylLabel" fill="#F27469" cx="284" cy="320" r="40.8"/>
+            <circle id="vinylInner" fill="#B32A38" cx="284" cy="320" r="17"/>
+            <circle id="vinylHole" fill="#eff2e1" cx="284" cy="320" r="2.5"/>
+        </g>
+        <g id="vinylShineGroup" stroke="#403737" stroke-linecap="round" stroke-linejoin="round">
+            <circle id="vinylShine1" opacity="0.3" fill="none" cx="284" cy="320" r="103" />
+            <circle id="vinylShine2" opacity="0.3" fill="none" cx="284" cy="320" r="91" />
+            <circle id="vinylShine3" opacity="0.3" fill="none" cx="284" cy="320" r="60" />
+            <g id="titleGroup" stroke="none" opacity="1">
+                <text>
+                        <textPath xlink:href="#titlePath"> The Starry Night </textPath>
+                </text>
+            </g>
+        </g>
+        <g id="armGroup">
+            <path id="arm" fill="none" stroke="#9F978D" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="M398.5,159v29c0,0-5.7,11.2-6.4,15.2
+                    s-4.3,16.2,7.6,30.1s81.7,93.9,85.5,99.4c3.7,5.5,5.1,8.7,3.4,20.2" />
+            <circle id="balance" fill="#CCCBCB" cx="396.5" cy="188" r="19" />
+            <path id="stylus" fill="#18110E" d="M489.9,367.5l-11.5-1.1c-2.2-0.2-3.8-2.2-3.6-4.4l1.5-15.9c0.2-2.2,2.2-3.8,4.4-3.6
+                    l11.5,1.1c2.2,0.2,3.8,2.2,3.6,4.4l-1.5,15.9C494,366.1,492.1,367.7,489.9,367.5z" />
+        </g>
+            <g id="circleDragger" opacity="0">
+                <circle cx="396.5" cy="188" r="190" fill="rgba(89,89,89,0.2)" stroke="red" />
+                <rect id="dragger" x="472" y="338" fill="#EF2572" width="26" height="36" opacity="1" />
+            </g>
+        </svg>
+    </div> -->
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div id="title">
+        <!-- <span> The Starry Night 은 기존 MBTI 검사보다 적은 시간을 들여 
+            재미있게 즐길 수 있게끔 만들어진 성격 유형 검사입니다. </span> -->
+            <img src="images/dream/ment.png">
+    </div>
+    </div>
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/utils/Draggable.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/ScrubGSAPTimeline.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/AnticipateEase.min.js'></script>
+    <script src="js/dream.js"></script>
 </body>
 </html>
