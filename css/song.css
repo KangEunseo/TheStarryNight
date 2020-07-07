@@ -63,8 +63,8 @@ div {
 
     .foo img {
         padding: 2vw;
-        max-height: 9vh;
-        max-width: 34vw;
+        max-height: 7vh;
+        max-width: 20vw;
     }
 
     .box {
