@@ -1,4 +1,4 @@
-var fadeIn = function(select) {
+var fadeIn = function() {
     $("body div").animate({
         "opacity": "0",
         "top": "10px"
