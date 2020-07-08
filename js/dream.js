@@ -1,9 +1,10 @@
-function clickPage(select) {
-  $("body div").animate({
-      "opacity": "0",
-      "top": "10px"
-  }, 500, function() {
-      setCookie('bath', select);
-      document.location.href = "result.html";
-  });
+var fadeIn = function(select) {
+    $("body div").animate({
+        "opacity": "0",
+        "top": "10px"
+    }, 500, function() {
+        document.location.href = "result_INFP.html";
+    });
 };
+
+setTimeout(fadeIn, 3000);
