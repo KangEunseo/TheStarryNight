@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang='en' class=''>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="fullPage.js-2.9.7/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="fullPage.js-2.9.7/examples.css" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title> The Starry Night </title> 
+
+    <script type="text/javascript" src="fullPage.js-2.9.7/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['', 'rgb(84, 98, 107)'],
+                anchors: ['firstPage', 'secondPage']
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<div id="fullpage">
+    <div class="section intro"> 
+      <div class="container">
+        <div class="left">
+            <div class="brush"><img id="rotating_brush" src="images/index/brush.png" width="100px" height="auto"></div>
+            <div class="yellow"><img id="rotating_yellow" src="images/index/yellow.png" width="80px" height="auto"></div>
+            <div class="phone"><img id="phoneImg" src="images/index/phone.png" width="454.184px" height="auto"></div>
+        </div>
+        </div>
+        <div class="right">
+            <img id="scale_brush" src="images/index/brush2.png" width="100px" height="auto">
+            <img id="brush2" src="images/index/brush3.png" width="100px" height="auto">
+            <img id="pal" src="images/index/pal.png" width="200px" height="auto">
+            <img id="pal2" src="images/index/pal.png" width="200px" height="auto">
+            <img id="brush3" src="images/index/brush3.png" width="100px" height="auto">
+        </div>
+        <div class="contents">
+            <img id="main" src="images/index/main.png" width="720px" height="auto">
+            <img id="contents" src="images/index/contents.png" width="570px" height="auto">
+        </div>
+        <div class="code">
+            <img id="code" src="images/index/code.png" width="120px" height="auto">
+            <img id="suggest" src="images/index/suggest.png" width="438px" height="auto">
+        </div>
+    </div>
+    <div class="section">
+        <div class="slide">
+          <video loop controls="false" style="height:80%;" data-autoplay>
+            <source src="video/TheStarryNight.mp4" type="video/mp4">
+          </video>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
