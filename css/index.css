@@ -11,7 +11,7 @@ body {
     justify-content: center;
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 2560px) {
     .section{
         text-align: center;
     }
@@ -127,8 +127,8 @@ body {
     #brush3 {
         -webkit-animation: rotation_brush2 7s infinite linear;
         position: relative;
-        top: 29vw;
-        left: 22vw;
+        top: 24vw;
+        left: -4vw;
         transform:rotate(0deg);
         -moz-transform: scaleX(-1); 
         -o-transform: scaleX(-1); 
@@ -163,25 +163,25 @@ body {
     #main {
         position: relative;
         top: -3.5556vw;
-        left: 37vw;
+        left: 32vw;
     }
     
     #contents {
         position: relative;
         top: 6vw;
-        left: 3vw;
+        left: 6vw;
     }
     
     #code {
         position: relative;
         top: 13vw;
-        left: 23vw;
+        left: 18vw;
     }
     
     #suggest {
         position: relative;
         top: 12.7vw;
-        left: 24vw;
+        left: 19vw;
     }
 }
 
@@ -233,7 +233,7 @@ body {
             top: 30%;
             left: 35%;
         }
-        
+
         @-webkit-keyframes rotation_yellow {
             from {-webkit-transform: rotate(0deg);}
             to   {-webkit-transform: rotate(-359deg);}
@@ -344,7 +344,7 @@ body {
             left: 60%;
         }
         
-        #suggest {0
+        #suggest {
             position: relative;
             top: 12.7vw;
             left: 61%;
