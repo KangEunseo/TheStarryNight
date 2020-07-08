@@ -4,6 +4,6 @@ function clickPage(select) {
         "top": "10px"
     }, 500, function() {
         setCookie('bath', select);
-        document.location.href = "sleep.html";
+        document.location.href = "dream.html";
     });
 };
