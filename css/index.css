@@ -11,7 +11,7 @@ body {
     justify-content: center;
 }
 
-@media all and (min-width:768px) {
+@media (min-width: 1281px) {
     .section{
         text-align: center;
     }
@@ -34,20 +34,19 @@ body {
     .brush {
         position: absolute;
         top: 13.8889vw;
-        left: -3.4722vw;
+        left: -7.4722vw;
     }
     
     .phone {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 10;
     }
     
     .yellow {
         position: absolute;
-        top: 17.3611vw;
-        left: 18vw;
+        top: 13.3611vw;
+        left: 15vw;
     }
     
     #rotating_brush {
@@ -330,7 +329,7 @@ body {
         #main {
             position: relative;
             top: -5.5556vw;
-            left: 56%;
+            left: 40%;
         }
         
         #contents {
@@ -345,7 +344,7 @@ body {
             left: 60%;
         }
         
-        #suggest {
+        #suggest {0
             position: relative;
             top: 12.7vw;
             left: 61%;
